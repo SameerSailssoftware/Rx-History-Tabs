@@ -10,27 +10,32 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css" />
   <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
-  <div class="m-4">
+  <div class="m-3 col-md-12" style="display:flex; column-gap: 1%;">
+
+    <div class="col-8">
+
     <nav class="navbar navbar-expand-lg navbar-light nav1">
       <div class="container-fluid">
-        <a href="#" class="navbar-brand">Patient - DANIEL, SHEKAR</a>
+        <a  class="navbar-brand">Patient - DANIEL, SHEKAR</a>
 
         <span class="rx--filter_text">
+          <input type="image" src="icon/star.png" class="rx-history-icon"> &nbsp; 
+          <input type="image" src="icon/add-people-white.png" class="rx-history-icon"> &nbsp; 
+          <input type="image" src="icon/board.png" class="rx-history-icon"> &nbsp; 
+          <input type="image" src="icon/people2.png" class="rx-history-icon"> &nbsp; 
           <input type="image" src="icon/Union.png" class="rx-history-icon"> &nbsp; 
           <input type="image" src="icon/Vector2.png" class="rx-history-icon">&nbsp; &nbsp;           
          </span>
 
       </div>
     </nav>
-    <div class="area">
+    <div class="area ">
 
       <section class="container">
         <div>
@@ -115,7 +120,7 @@
         <div>
           <h5 class="py-2">Address</h5>
           <form class="row">
-            <div class="col-3" style="width: 690px;">
+            <div class="col-3" style="width: 566px;">
               <h5>2ND STREET, SCHENECTADY,  NY, 12345</h5>
             </div>
           </form>
@@ -166,6 +171,106 @@
 
       </section>
     </div>
+
+
+    
+    <div class="input-group" style="padding-top: 10px;">
+      <div class="center" style="width: 134.78px;
+      height: 39px !important;
+      font-size: 15px;
+      color: white;
+      background: #31AFE5;
+      border-radius: 10px 0px 0px 10px;">Prescriber</div>
+      <div class="input-group date" style="height: 40px !important;" id="datepicker">
+        <input type="text" class="form-control" style="height: 40px !important;" placeholder="ADK, MSD">
+        <span class="input-group-append">
+          <span class="input-group-text bg-#DCDCDC d-block">
+            <input type="image" src="icon/search.png" class="rx-history-icon2">
+          </span>
+        </span>
+      </div>
+      <div class="btn2" style="padding-top: 17px; padding-left: 10px;">
+        <button class="btn" id="btn0"><span>- C</span> Rx Notes Log</button>
+      </div>
+    </div>
+    
+
+
+  </div>
+
+
+
+
+  <div class="col-md-3">
+  <nav class="navbar navbar-expand-lg navbar-light nav1">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand">Rx Documents</a>
+
+    </div>
+  </nav>
+  <div class="area" style="height: 170px;">
+
+    <section class="container" style="height: 88px;">
+      <div>
+        <h5 class="py-2">Title<span style="color: red;">*</span></h5>
+        <form class="row">
+          <div class="col-3">
+            <div class="dropdown">
+              <button class="btn btn-title dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Title
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+       <div>
+        <h5 class="py-2"> Toggle Scanner</h5>
+        <form class="row">
+          <div class="col-3">
+            <div style="background-color: #ECF2F8;
+            border-radius: 5px;
+            width: 189px;
+            display: flex;
+            height: 110.95px;
+            align-items: center;
+            justify-content: center;">
+
+            <input type="image" src="icon/scanner.png" >
+
+            </div>
+          </div>
+        </form>
+      </div>  
+
+
+
+    </section>
+
+    <section class="container" style="padding-left: 56px;">
+
+      <div style="background: #FFE4C5;
+    width: 140px;
+    height: 61px;
+    display: flex;
+    padding-left: 9px;
+    border-radius: 5px;">
+        <h1  style="color: #5D636B; text-align: center; padding-top: 15px; font-size: 14px;"> <span style="font-size: large; font-weight: bold;">Upload a File </span> <br>Max Size 10 MB </h1>
+        
+      </div>
+
+    </section>
+  </div>
+
+</div>
+
+
+
   </div>
 
 
@@ -541,31 +646,7 @@
           </app-rx-select>
   
   
-        <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-          <button class="dropdown-item" type="button">Action</button>
-          <button class="dropdown-item" type="button">Another action</button>
-          <button class="dropdown-item" type="button">Something else here</button>
-        </div>
-      </div>
-  
       
-      <div class="btn2">
-        <button class="btn" id="btnd"> PRINT REPORT</button>
-      </div>
-      
-      <div class="btn2">
-        <button class="btn" id="btnd"> VIEW REPORT</button>
-      </div>
-  
-      <div class="btn2">
-        <button class="btn" id="btnd"> CHANGE DELIVERY DRIVER</button>
-      </div>
-  
-      <div class="btn2">
-        <button class="btn" id="btnd"> DELIVERY ROUTE</button>
-      </div>
-  
-       -->
   
     </div>
   
@@ -621,22 +702,6 @@
                               <option value="Deferred" id="Deferred">Deferred </option>
         
   
-      
-  
-  
-    
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   ...
   ...
   
@@ -676,13 +741,13 @@
 
       <div class="area">
 
-        <section class="container" style="display: flex; column-gap: 64px;"> 
+        <section class="container" style="display: flex; column-gap: 26px;"> 
           <div>
             <h5 class="py-2">From Date</h5>
             <form class="row">
               <div class="col-3">
                 <div class="input-group date" id="datepicker">
-                  <input type="text" class="form-control" id="date" placeholder="MM/DD/YYY">
+                  <input type="text" class="form-control" id="date" placeholder="07/11/2022">
                   <span class="input-group-append">
                     <span class="input-group-text bg-#DCDCDC d-block">
                       <input type="image" src="icon/cal.png" class="rx-history-icon2">
@@ -698,7 +763,7 @@
             <form class="row">
               <div class="col-3">
                 <div class="input-group date" id="datepicker">
-                  <input type="text" class="form-control" id="date" placeholder="MM/DD/YYY">
+                  <input type="text" class="form-control" id="date" placeholder="07/11/2022">
                   <span class="input-group-append">
                     <span class="input-group-text bg-#DCDCDC d-block">
                       <input type="image" src="icon/cal.png" class="rx-history-icon2">
@@ -713,7 +778,7 @@
             <form class="row">
               <div class="col-3">
                 <div class="input-group date" id="datepicker">
-                  <input type="text" class="form-control" id="date" placeholder="All">
+                  <input type="text" class="form-control" placeholder="READY TO PROCESS">
                   <span class="input-group-append">
                     <span class="input-group-text bg-#DCDCDC d-block">
                       <input type="image" src="icon/down.png" class="rx-history-icon3">
@@ -728,7 +793,7 @@
             <form class="row">
               <div class="col-3">
                 <div class="input-group date" id="datepicker">
-                  <input type="text" class="form-control" id="date" placeholder="All">
+                  <input type="text" class="form-control" placeholder="All">
                   <span class="input-group-append">
                     <span class="input-group-text bg-#DCDCDC d-block">
                       <input type="image" src="icon/down.png" class="rx-history-icon3">
@@ -743,7 +808,7 @@
             <form class="row">
               <div class="col-3">
                 <div class="input-group date" id="datepicker">
-                  <input type="text" class="form-control" id="date" placeholder="All">
+                  <input type="text" class="form-control" placeholder="Search">
                   <span class="input-group-append">
                     <span class="input-group-text bg-#DCDCDC d-block">
                       <input type="image" src="icon/search.png" class="rx-history-icon2">
@@ -823,7 +888,7 @@
           <td class="highlight9">Ready To Process</td> <td>07/27/22 08:40:33</td>
           <td> <button type="button" class="btn"> <img src="icon/add-people.png" height="21px" width="20px"></button> &nbsp; Whiteside, Kara </td>
           <td> <button type="button" class="btn"> <img src="icon/u.png" height="21px" width="20px"></button> &nbsp; Acula, Bob V6.1 </td>
-          <td> <button type="button" class="btn"> <img src="icon/rx.png" height="24px" width="19px"></button> &nbsp; Suboxone 8 mg-2 Sublingual Film Co </td>
+          <td> <button type="button" class="btn"> <img src="icon/rx.png" height="24px" width="17px"></button> &nbsp; Suboxone 8 mg-2 Sublingual Film Co </td>
           <td>09/05/22</td> <td>N</td><td></td>
         </tr>
   
@@ -843,7 +908,7 @@
           <td class="highlight9">Ready To Process</td> <td>07/27/22 08:40:33</td>
           <td> <button type="button" class="btn"> <img src="icon/add-people.png" height="21px" width="20px"></button> &nbsp; Whiteside, Kara </td>
           <td> <button type="button" class="btn"> <img src="icon/u.png" height="21px" width="20px"></button> &nbsp; Acula, Bob V6.1 </td>
-          <td> <button type="button" class="btn"> <img src="icon/rx.png" height="24px" width="19px"></button> &nbsp; Suboxone 8 mg-2 Sublingual Film Co </td>
+          <td> <button type="button" class="btn"> <img src="icon/rx.png" height="24px" width="17px"></button> &nbsp; Suboxone 8 mg-2 Sublingual Film Co </td>
           <td>09/05/22</td> <td>N</td><td></td>
         </tr>
   
@@ -864,7 +929,7 @@
           <td> <button type="button" class="btn"> <img src="icon/add-people.png" height="21px" width="20px"></button> &nbsp; Whiteside, Kara </td>
           <td> <button type="button" class="btn"> <img src="icon/u.png" height="21px" width="20px"></button> &nbsp; Acula, Bob V6.1 </td>
   
-          <td> <button type="button" class="btn"> <img src="icon/rx.png" height="24px" width="19px"></button> &nbsp; Suboxone 8 mg-2 Sublingual Film Co </td>
+          <td> <button type="button" class="btn"> <img src="icon/rx.png" height="24px" width="17px"></button> &nbsp; Suboxone 8 mg-2 Sublingual Film Co </td>
           <td>09/05/22</td> <td>N</td><td></td>
         </tr>
   
@@ -885,7 +950,7 @@
               <td> <button type="button" class="btn"> <img src="icon/add-people.png" height="21px" width="20px"></button> &nbsp; Whiteside, Kara </td>
               <td> <button type="button" class="btn"> <img src="icon/u.png" height="21px" width="20px"></button> &nbsp; Acula, Bob V6.1 </td>
   
-              <td> <button type="button" class="btn"> <img src="icon/rx.png" height="24px" width="19px"></button> &nbsp; Suboxone 8 mg-2 Sublingual Film Co </td>
+              <td> <button type="button" class="btn"> <img src="icon/rx.png" height="24px" width="17px"></button> &nbsp; Suboxone 8 mg-2 Sublingual Film Co </td>
               <td>09/05/22</td> <td>N</td><td></td>
             </tr>
   
@@ -905,7 +970,7 @@
           <td class="highlight9">Ready To Process</td> <td>07/27/22 08:40:33</td>
           <td> <button type="button" class="btn"> <img src="icon/add-people.png" height="21px" width="20px"></button> &nbsp; Whiteside, Kara </td>
           <td> <button type="button" class="btn"> <img src="icon/u.png" height="21px" width="20px"></button> &nbsp; Acula, Bob V6.1 </td>
-          <td> <button type="button" class="btn"> <img src="icon/rx.png" height="24px" width="19px"></button> &nbsp; Suboxone 8 mg-2 Sublingual Film Co </td>
+          <td> <button type="button" class="btn"> <img src="icon/rx.png" height="24px" width="17px"></button> &nbsp; Suboxone 8 mg-2 Sublingual Film Co </td>
           <td>09/05/22</td> <td>N</td><td></td>
         </tr>
   
@@ -927,7 +992,7 @@
               <td> <button type="button" class="btn"> <img src="icon/add-people.png" height="21px" width="20px"></button> &nbsp; Whiteside, Kara </td>
               <td> <button type="button" class="btn"> <img src="icon/u.png" height="21px" width="20px"></button> &nbsp; Acula, Bob V6.1 </td>
   
-                <td> <button type="button" class="btn"> <img src="icon/rx.png" height="24px" width="19px"></button> &nbsp; Suboxone 8 mg-2 Sublingual Film Co </td>
+                <td> <button type="button" class="btn"> <img src="icon/rx.png" height="24px" width="17px"></button> &nbsp; Suboxone 8 mg-2 Sublingual Film Co </td>
                 <td>09/05/22</td> <td>N</td><td></td>
         </tr>
   
@@ -985,17 +1050,249 @@
 
     </div>
 
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+      <div class=" col-md-12" style="display:flex; column-gap: 1%;">
+
+        <div class="col-6">
     
+        <nav class="navbar navbar-expand-lg navbar-light nav1">
+          <div class="container-fluid">
+            <a class="navbar-brand">Scanned Documents</a>
+    
+          </div>
+        </nav>
+        <div class="area" style="height: 100px;">
+    
+          <section class="container" style="height: 88px;">
+            <div>
+              <h5 class="py-2">Title<span style="color: red;">*</span></h5>
+              <form class="row">
+                <div class="col-3">
+                  <div class="dropdown">
+                    <button class="btn btn-title dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Title
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+
+            <div class="btn1">
+              <button class="btn" id="btn3"><span>- N</span> Scan New</button>
+              <button class="btn" id="btn3"><span>- I</span> Import Docs</button>
+            </div>
+      
+      
+          </section>
+        </div> <br>
+    
+    
+        
+        <table id="tbstud">
+          <tbody>
+            <tr>
+            <th class="column_heading" style="border-top-left-radius: 5px;"> Tag</th>
+            <th class="column_heading">Actions </th>
+            <th class="column_heading">Document ID</th>
+            <th class="column_heading">Attach</th>
+            <th class="column_heading" style="width: 17%;">Tag Patient</th>
+            <th class="column_heading">Delivery Priority</th>
+            <th class="column_heading">Fill Rx</th>
+            
+            <th class="column_heading" style="border-top-right-radius: 5px;"><img src="icon/settings.png" height="21px" width="20px"></th>
+          </tr>
+    
+          <tr class="customer_row">
+            <td class="spc2" id="left">
+              <input type="checkbox" id="vehicle1">
+            </td>
+            <td style="width: 9%;">
+              <button type="button" class="btn"> <img src="icon/eye.png" height="18px" width="20px"></button>
+              <button type="button" class="btn"> <img src="icon/edit.png" height="18px" width="20px"></button>
+            </td>
+            <td style="width: 16%;"> D090922054532711</td>
+            <td style="width: 10%;"> <div class="highlight2"> <img src="icon/pin.png" height="21px" width="20px"> &nbsp; Attach </div></td>
+            <td class="center" >Daniel, Shekar &nbsp; <img src="icon/tag.png" height="21px" width="20px"></td>
+            <td style="width: 20%;">
+              <div class="dropdown">
+                <app-rx-select>
+                  <div class="form-group custom--input custom--select default"><fieldset>
+                    <span class="custom--select__span">
+                      <select class="rx--select" id="undefined2" tabindex="0" title=""><option value="All" id="All">&nbsp;  </option>
+                        <option value="Unbilled" id="Unbilled">Unbilled </option>
+                        <option value="Billed" id="Billed">Billed </option>
+                        <option value="Deferred" id="Deferred">Deferred </option>
+                      </select></span>
+                    </fieldset></div>
+                  </app-rx-select>
+            </div>
+          </td>
+
+            <td> <span class="highlight2"> <img src="icon/Pen.png" height="21px" width="20px"> &nbsp; Fill  </span></td>
+            <td></td>
+          </tr>
+    
+          <tr class="customer_row">
+            <td class="spc2" id="left">
+              <input type="checkbox" id="vehicle1">
+            </td>
+            <td style="width: 9%;">
+              <button type="button" class="btn"> <img src="icon/eye.png" height="18px" width="20px"></button>
+              <button type="button" class="btn"> <img src="icon/edit.png" height="18px" width="20px"></button>
+            </td>
+            <td style="width: 16%;"> D090922054532711</td>
+            <td style="width: 10%;"> <div class="highlight2"> <img src="icon/pin.png" height="21px" width="20px"> &nbsp; Attach </div></td>
+            <td class="center" >Daniel, Shekar &nbsp; <img src="icon/tag.png" height="21px" width="20px"></td>
+            <td style="width: 20%;">
+              <div class="dropdown">
+                <app-rx-select>
+                  <div class="form-group custom--input custom--select default"><fieldset>
+                    <span class="custom--select__span">
+                      <select class="rx--select" id="undefined2" tabindex="0" title=""><option value="All" id="All">&nbsp;  </option>
+                        <option value="Unbilled" id="Unbilled">Unbilled </option>
+                        <option value="Billed" id="Billed">Billed </option>
+                        <option value="Deferred" id="Deferred">Deferred </option>
+                      </select></span>
+                    </fieldset></div>
+                  </app-rx-select>
+            </div>
+          </td>
+
+            <td> <span class="highlight2"> <img src="icon/Pen.png" height="21px" width="20px"> &nbsp; Fill  </span></td>
+            <td></td>
+          </tr>
+    
+          <tr class="customer_row">
+            <td class="spc2" id="left">
+              <input type="checkbox" id="vehicle1">
+            </td>
+            <td style="width: 9%;">
+              <button type="button" class="btn"> <img src="icon/eye.png" height="18px" width="20px"></button>
+              <button type="button" class="btn"> <img src="icon/edit.png" height="18px" width="20px"></button>
+            </td>
+            <td style="width: 16%;"> D090922054532711</td>
+            <td style="width: 10%;"> <div class="highlight2"> <img src="icon/pin.png" height="21px" width="20px"> &nbsp; Attach </div></td>
+            <td class="center" >Daniel, Shekar &nbsp; <img src="icon/tag.png" height="21px" width="20px"></td>
+            <td style="width: 20%;">
+              <div class="dropdown">
+                <app-rx-select>
+                  <div class="form-group custom--input custom--select default"><fieldset>
+                    <span class="custom--select__span">
+                      <select class="rx--select" id="undefined2" tabindex="0" title=""><option value="All" id="All">&nbsp;  </option>
+                        <option value="Unbilled" id="Unbilled">Unbilled </option>
+                        <option value="Billed" id="Billed">Billed </option>
+                        <option value="Deferred" id="Deferred">Deferred </option>
+                      </select></span>
+                    </fieldset></div>
+                  </app-rx-select>
+            </div>
+          </td>
+
+            <td> <span class="highlight2"> <img src="icon/Pen.png" height="21px" width="20px"> &nbsp; Fill  </span></td>
+            <td></td>
+          </tr>
+    
+          <tr class="customer_row">
+            <td class="spc2" id="left">
+              <input type="checkbox" id="vehicle1">
+            </td>
+            <td style="width: 9%;">
+              <button type="button" class="btn"> <img src="icon/eye.png" height="18px" width="20px"></button>
+              <button type="button" class="btn"> <img src="icon/edit.png" height="18px" width="20px"></button>
+            </td>
+            <td style="width: 16%;"> D090922054532711</td>
+            <td style="width: 10%;"> <div class="highlight2"> <img src="icon/pin.png" height="21px" width="20px"> &nbsp; Attach </div></td>
+            <td class="center" >Daniel, Shekar &nbsp; <img src="icon/tag.png" height="21px" width="20px"></td>
+            <td style="width: 20%;">
+              <div class="dropdown">
+                <app-rx-select>
+                  <div class="form-group custom--input custom--select default"><fieldset>
+                    <span class="custom--select__span">
+                      <select class="rx--select" id="undefined2" tabindex="0" title=""><option value="All" id="All">&nbsp;  </option>
+                        <option value="Unbilled" id="Unbilled">Unbilled </option>
+                        <option value="Billed" id="Billed">Billed </option>
+                        <option value="Deferred" id="Deferred">Deferred </option>
+                      </select></span>
+                    </fieldset></div>
+                  </app-rx-select>
+            </div>
+          </td>
+
+            <td> <span class="highlight2"> <img src="icon/Pen.png" height="21px" width="20px"> &nbsp; Fill  </span></td>
+            <td></td>
+          </tr>
+
+        </tbody></table>
+
+
+        <div class="footer-btn">
+  
+          <div class="btn2">
+            <button class="btn" id="btn0"><span>- I</span> Untag Patient and Priority</button>
+          </div>
+          <div class="btn2">
+            <button class="btn" id="btn0"><span>- T</span> Tag Patient and Priority</button>
+          </div>
+          <div class="btn2">
+            <button class="btn" id="btn0"><span>- D</span> Delete Docs</button>
+          </div>
+          <div class="btn2">
+            <button class="btn" id="btn0"><span>- A</span> Untag All</button>
+          </div>
+          <div class="btn2">
+            <button class="btn" id="btn0"><span>- T</span> Process Tagged Doc</button>
+          </div>    
+        </div>
+  
+
+
+
+
+      </div>
+    
+      <div class="col-md-6">
+      <nav class="navbar navbar-expand-lg navbar-light nav1">
+        <div class="container-fluid">
+          <a class="navbar-brand">Image</a>
+    
+        </div>
+      </nav>
+      <div class="area" 
+      style="height: 95%; 
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;">
+    
+                <img src="icon/image.png" alt="" style="width: 724.83px;
+                height: 405.88px;">  
+    
+    
+       
+      </div>
+    
+    </div>
+    
+    
+    
+      </div>
 
 
 
 
 
 
+    </div>
 
 
 
-    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+
   </div>
 
 

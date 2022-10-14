@@ -6,6 +6,12 @@ body{
     font-family: sans-serif !important;
 }
 
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .nav1 {
     background-color: #31afe5 !important;
     border-top-left-radius: 5px;
@@ -22,7 +28,7 @@ body{
 .area {
     background-color: white;
     font-family: sans-serif;
-    height: 129px;
+    height: 132px;
     color: rgb(255, 255, 255);
     font-size: 10px;
     box-shadow: 0px 4px 8px rgb(0 0 0 / 16%);
@@ -99,8 +105,9 @@ body{
 
 
 .input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3), .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
-    width: 277px;
-    font-size: 11px;
+    width: 80%;
+    height: 32px !important;
+    font-size: 15px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
@@ -135,7 +142,7 @@ body{
     display: flex;
     justify-content: space-between;
     margin-left: 0px;
-    column-gap: 78px;
+    /* column-gap: 78px; */
 }
 
 
@@ -240,7 +247,7 @@ body{
     width: 121px;
     height: 44px;
     background-repeat: no-repeat;
-    /* border-color: #dee2e6 #dee2e6 #fff; */
+    border-color: #ecf4fa;
 }
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
@@ -392,6 +399,24 @@ td{
     text-align-last: start;
 }
 
+.btn-title{
+    background-color: white;
+    color: #99aebe;
+    border-color: #99aebe;
+    height: 40px;
+    width: 227px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.m-3 {
+    margin: 1.5rem !important;
+    font-family: sans-serif !important;
+    color: #5d636b;
+}
+
 .m-4 {
     margin: 1.5rem !important;
     font-family: sans-serif !important;
@@ -425,6 +450,10 @@ td{
 /* Rx History header......... */
 
 
+.col-8 {
+    flex: 0 0 auto;
+    width: 70.666667%;
+}
 
 .pat-hist--header {
     display: flex;
@@ -732,6 +761,20 @@ padding: 9px 0px;
 }
 
 
+#btn3{
+    background-color: #ffffff;
+    height: 40px;
+    border-width: 1px;
+    width: 117px;
+    font-weight: 550;
+    border-color: #51a351;
+    align-self: center;
+    font-size: 13px;
+    color: #51a351;
+    border-radius: 5px;
+}
+
+
 #btnd{
     background-color: #ffffff;
     height: 38px;
@@ -797,6 +840,21 @@ padding: 9px 0px;
     color: #5d636b;
     border-radius: 5px;
 
+}
+
+#undefined2{
+
+    background-color: #ecf2f8;
+    height: 2rem;
+    border-width: 1px;
+    margin-left: -13px;
+    width: 100%;
+    font-weight: 550;
+    border-color: #b7bec800 !important;
+    align-self: center;
+    font-size: 13px;
+    color: #5d636b;
+    border-radius: 5px; 
 }
 
 .navbar>.container,
@@ -887,6 +945,11 @@ padding: 9px 0px;
     font-size: 14px;
     line-height: 18px;
     color: #5D636B;
+}
+
+.col-6 {
+    flex: unset;
+    width: 50%;
 }
 
 
